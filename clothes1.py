@@ -95,7 +95,7 @@ st.markdown("""
 
 # 选择城市的下拉列表
 st.write("都道府県を選択してください")
-city_name = st.selectbox("", options=list(cities.keys()), format_func=lambda x: x, key="city")
+city_name = st.selectbox("", options=list(cities.keys()), key="city")
 
 
 

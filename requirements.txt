@@ -1,0 +1,8 @@
+requests
+joblib
+numpy
+pandas
+pillow
+altair
+scikit-learn
+streamlit

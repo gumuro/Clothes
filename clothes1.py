@@ -173,7 +173,7 @@ st.markdown(f"""
 #st.write(f"Clothing advice for today: {clothing_advice[0]}")
 
 
-clothes_df = pd.read_excel('C:/1作品/picture_myclothes/clothes.xlsx')
+clothes_df = pd.read_excel('clothes.xlsx')
       
 unique_clothing_types = set(clothing_advice_list)
 

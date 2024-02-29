@@ -123,9 +123,9 @@ average_wind_speed = weather_data['wind']['speed']
 sensible_temperature = weather_data['main']['feels_like']
 
 # 加载模型和标签编码器
-model_path = 'C:/1作品/picture_myclothes/random_forest_classifier.joblib'
+model_path = 'random_forest_classifier.joblib'
 model = load(model_path)
-season_encoder = joblib.load('C:/1作品/picture_myclothes/season_encoder.joblib')
+season_encoder = joblib.load('season_encoder.joblib')
 
 # 使用标签编码器转换新的输入数据
 season_encoded = season_encoder.transform([season])

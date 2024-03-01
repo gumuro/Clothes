@@ -121,7 +121,7 @@ footer {
 """, unsafe_allow_html=True)
 
 # ヘッダーの追加
-st.markdown('<header>オススメ服</header>', unsafe_allow_html=True)
+st.markdown('<header>天気に基づくオススメ服</header>', unsafe_allow_html=True)
 st.write("         ")
 st.write("         ")
 st.write("         ")

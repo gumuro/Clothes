@@ -243,11 +243,11 @@ for index, clothing_type in enumerate(unique_clothing_types):
             st.error(f"ファイルが見つかりません：{image_path}")
 
 
-# ボタンが押されたときにリンクを開く関数
-def open_link(url):
-    webbrowser.open_new_tab(url)
+# ボタンが押されたときにリンクを開くHTMLコードを生成する関数
+def get_link_button_html(url, button_text):
+    return f'<a href="{url}" target="_blank"><button>{button_text}</button></a>'
 
 # ボタンを作成
 if st.button("服のファッショントレンド"):
-    # ボタンが押されたときにリンクを開く
-    open_link("https://public.tableau.com/app/profile/kaku.bokuyou/viz/fuku21/1?publish=yes")
+    # ボタンが押されたときにリンクを開くHTMLコードを表示
+    st.markdown(get_link_button_html("https://public.tableau.com/app/profile/kaku.bokuyou/viz/fuku21/1?publish=yes", "服のファッショントレンド"), unsafe_allow_html=True)
